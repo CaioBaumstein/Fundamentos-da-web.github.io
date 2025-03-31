@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Mercado do Bento</title>
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+</head>
+
+<header>
+  <script type="text/javascript" src="../Scripts/bootstrap.min.js"></script>
+  <script src="../Scripts/senha.js"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../Imagens/img_bento.png" class="img-thumbnail"
+          alt="Desenho do personagem Chico Bento da Turma da Monica" width="50" title="O Criador"/> Mercado do
+        Bento</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Cadastro</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="Hortifruti.html">Hortifruti</a></li>
+              <li><a class="dropdown-item" href="Nao_perec.html">Não Perecíveis</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="Higienizacao.html">Produtos de Limpeza</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="" aria-disabled="true">Funcionamento: Segunda - Sexta |
+              08:00 - 17:00</a>
+          </li>
+        </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+<br />
+
+<body>
+  <form action="" method="" class="row g-3 needs-validation" novalidate>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="usuario" class="form-label">Nome completo:</label>
+          <input type="text" class="form-control" id="usuario" placeholder="Insira o seu nome" required>
+        </div>
+        <div class="col-md-5">
+          <label for="CPF" class="form-label">CPF:</label>
+          <input type="text" class="form-control" id="CPF" placeholder="XXX.XXX.XXX-XX" maxlength="11" required>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <label for="telefone" class="form-label">Telefone:</label>
+        <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="11" required>
+      </div>
+      <div class="col-md-5">
+        <label for="email" class="form-label">Email:</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text">@</span>
+          <input type="email" class="form-control" id="email" placeholder="exemplo@email.com" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-10">
+        <p class="display-7">Sexo:</p>
+
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" value="Masculino" type="radio" name="sexo" id="sexo1">
+          <label class="form-check-label" for="sexo1">Masculino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" value="Feminino" type="radio" name="sexo" id="sexo2">
+          <label class="form-check-label" for="sexo2">Feminino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" value="Outro" type="radio" name="sexo" id="sexo3">
+          <label class="form-check-label" for="sexo3">Outro</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-5">
+        <label for="estado" class="form-label">Estado:</label>
+        <select id="estado" class="form-select" required>
+          <option selected disabled>Escolha um estado</option>
+          <option value="RS">RS</option>
+          <option value="SC">SC</option>
+          <option value="PR">PR</option>
+        </select>
+      </div>
+
+      <div class="col-md-5">
+        <label for="cidade" class="form-label">Cidade:</label>
+        <input type="text" class="form-control" id="cidade" placeholder="Insira a sua cidade" required>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <label for="endereco" class="form-label">Endereço:</label>
+        <input type="text" class="form-control" id="endereco" placeholder="Insira o nome da sua rua" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="numero" class="form-label">Número:</label>
+        <input type="number" class="form-control" id="numero" placeholder="Insira o número" required>
+      </div>
+
+      <div class="col-md-4">
+        <label for="complemento" class="form-label">Complemento:</label>
+        <input type="text" class="form-control" id="complemento" placeholder="Apto, Bloco, etc" required>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-2">
+        <label for="CEP" class="form-label">CEP:</label>
+        <input type="number" class="form-control" id="CEP" placeholder="XXXXX-XXX" required>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-5">
+        <label for="senha1" class="form-label">Senha:</label>
+        <input type="password" class="form-control" id="senha1" required>
+        <div id="passwordHelpBlock" class="form-text">
+          A sua senha deve conter pelo menos 8 caracteres incluindo letras maiúsculas, minúsculas e números.
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <label for="senha2" class="form-label">Confirme a senha:</label>
+        <input type="password" class="form-control" id="senha2" required>
+        <div class="invalid-feedback">As senhas não coincidem.</div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Estou de acordo com os termos e condições
+        </label>
+        <div class="invalid-feedback">
+          Você deve concordar com os termos antes de enviar os dados.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+  </form>
+
+</body>
+
+<br><br>
+
+<footer class="bg-dark text-light pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h5>Sobre o mercado</h5>
+        <p>Inaugurado em 2025, este mercado foi criado com o intuito de servir como uma parada única para alimentos e
+          produtos para casa por um preço acessível.</p>
+      </div>
+
+      <div class="col-md-1">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="Index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Serviços</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Nos siga nas redes sociais</h5>
+        <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-2"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+      </div>
+
+      <div class="col-md-2">
+        <h5>Autor</h5>
+        <p>Caio Baumstein</p>
+        <p>Cadeira de Fundamentos de Sistemas Web</p>
+        <p>PUC-RS</p>
+      </div>
+    </div>
+
+    <div class="text-center py-3 mt-3 border-top">
+      <p class="mb-0">© 2025 Bento Inc | Todos Direitos Reservados</p>
+    </div>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+</html>
